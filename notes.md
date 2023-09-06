@@ -16,7 +16,7 @@ for i in range(len(A_LIST)):
      FOUND == True
      break
 ```
-
+  
 Linear search processing time is dependent on the length of the array and the value's placement within the array. Arrays that are 1000 indices or higher can have a noticeable change in time requirements while running.
 
 ### Measuring Time
