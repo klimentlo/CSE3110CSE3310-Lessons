@@ -2,8 +2,8 @@
 
 '''
 title: a_linear_search.py
-author: Kliment Lo
-date: 2023-09-06
+author: kliment_lo
+date: 2023/09/06
 '''
 
 import random
@@ -18,7 +18,6 @@ NUMBERS = []
 for i in range(20000000):
     if random.randrange(2) == 1:
         NUMBERS.append(i)
-print("Done generating")
 
 TRIALS = []
 
