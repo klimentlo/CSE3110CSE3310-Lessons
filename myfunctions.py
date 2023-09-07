@@ -25,7 +25,8 @@ def getList(SIZE):
     for i in range(2*SIZE):
         if random.randrange(2) == 1:
             numbers.append(i)
-        return numbers
+
+    return numbers
 
 def getRandomList(SIZE):
     '''
