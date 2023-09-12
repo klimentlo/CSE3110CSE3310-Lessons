@@ -15,7 +15,8 @@ def bubbleSort(LIST):
     :return: (none) [lists persist inside and outside of a function]
     '''
     # [13, 8, 4, 21]
-    for i in range(len(LIST)-1, 0, -1): # traverses backwards from the end to index 1
+    LIST = [13, 8, 4, 21, 5, 34, 23]
+    for i in range(len(LIST)-1, 0, -1): # (start index (-1 = the last index), stop index, move backwards by one) traverses backwards from the end to index 0, then deletes the index it just ran throguh
         for j in range(i): # traversing forward in the unsorted section of the list
             if LIST[j] > LIST[j+1]:# if left number is greater than the right number
                 TEMP = LIST[j]
