@@ -147,4 +147,17 @@ f(x) = x * f(x-1) , x > 0 --> process that get x to the base case
        1, x = 0 --> base case
 ```
 
-Luca Merrick Chase William Luca
+##Sorting
+Recursive sorting uses both recursive and iterative processes. In general, these hybrid sorts are exponentially faster with longer lists (They are measured on a logarithmic scale).
+
+
+### Merge Sort
+Merge sort follows a divide and conquer method of sorting, where teh array is split into the base length and then rebuilt by combining progressively larger sorted lists together. The recursive portion is the splitting of the list and the iterative process is the actual merging of the of two smaller sorted lists. 
+
+Oftentimes, this function is separated into splitting and merging functions.
+
+
+Luca Merrick Chase William Luca 
+1582 cat food, 10:33 
+1607 cat food, 10:42   2.77 cat food a minute
+1621 cat food, 11:03   0.6667 cat food a minute
