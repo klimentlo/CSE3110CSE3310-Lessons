@@ -166,4 +166,4 @@ NOTE: Quick Sort's efficiency is from separating the list into two sections that
 Luca Merrick Chase William Luca 
 1582 cat food, 10:33 
 1607 cat food, 10:42   2.77 cat food a minute
-1621 cat food, 11:03   0.6667 cat food a minute
+1621 cat food, 11:03   0.6667 cat food a minut
