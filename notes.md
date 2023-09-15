@@ -156,6 +156,12 @@ Merge sort follows a divide and conquer method of sorting, where teh array is sp
 
 Oftentimes, this function is separated into splitting and merging functions.
 
+### Quick Sort
+
+Quick sort (quicksort) is another divide and conquer method of sorting. Quicksort utilizes an arbitrary value as its pivot, which is then used to place the pivot value in the correct place in the array. It does this by placing all smaller values to the left of the pivot and all a larger values to the right of the pivot. Then it places the pivot value where the smaller and larger portions intersect. Then it moves to the next pivot value recurring until a sublist is a length of one.
+
+NOTE: Quick Sort's efficiency is from separating the list into two sections that will never compare values with each other again.
+
 
 Luca Merrick Chase William Luca 
 1582 cat food, 10:33 
