@@ -160,10 +160,11 @@ Oftentimes, this function is separated into splitting and merging functions.
 
 Quick sort (quicksort) is another divide and conquer method of sorting. Quicksort utilizes an arbitrary value as its pivot, which is then used to place the pivot value in the correct place in the array. It does this by placing all smaller values to the left of the pivot and all a larger values to the right of the pivot. Then it places the pivot value where the smaller and larger portions intersect. Then it moves to the next pivot value recurring until a sublist is a length of one.
 
+(Left one asks,is this bigger than pivot. Once found, stop. Right one asks, is this smaller than pivot. Once found, stop. Swap the cards. Move on. Once the right index and left indexs cross, pivot and the right index value is swapped with each other. The pivot is now sorted, and the left side of the old pivot will never interact with the right side of the old pivot. The left hand resets back to the beginning, right hand continues on. Once the left hits the end of the row, the 
+
 NOTE: Quick Sort's efficiency is from separating the list into two sections that will never compare values with each other again.
 
 
 Luca Merrick Chase William Luca 
-1582 cat food, 10:33 
-1607 cat food, 10:42   2.77 cat food a minute
-1621 cat food, 11:03   0.6667 cat food a minut
+795 food 10:44
+943 food 11:39
