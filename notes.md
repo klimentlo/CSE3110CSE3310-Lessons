@@ -163,8 +163,3 @@ Quick sort (quicksort) is another divide and conquer method of sorting. Quicksor
 (Left one asks,is this bigger than pivot. Once found, stop. Right one asks, is this smaller than pivot. Once found, stop. Swap the cards. Move on. Once the right index and left indexs cross, pivot and the right index value is swapped with each other. The pivot is now sorted, and the left side of the old pivot will never interact with the right side of the old pivot. The left hand resets back to the beginning, right hand continues on. Once the left hits the end of the row, the 
 
 NOTE: Quick Sort's efficiency is from separating the list into two sections that will never compare values with each other again.
-
-
-Luca Merrick Chase William Luca 
-795 food 10:44
-943 food 11:39
