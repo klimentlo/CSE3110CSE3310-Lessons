@@ -36,7 +36,7 @@ def binarySearch (LIST, VALUE):
     if LIST[MIDPOINT_INDEX] == VALUE: # base case
         return True
     else:
-        # simplify the list and return the function
+        # simplify the list and return the function ye
         if VALUE < LIST[MIDPOINT_INDEX]:
             return binarySearch(LIST[:MIDPOINT_INDEX], VALUE)
         else:
