@@ -58,7 +58,15 @@ def heapSort(LIST):
 
 if __name__ == "__main__":
     from myFunctions import *
-    NUMBERS = getRandomList(10)
+
+    TIMES = []
+    for i in range(100):
+        NUMBERS = getRandomList(10000)
+        START_TIME = getTime()
+        heapSort(NUMBERS)
+        END_TIME = getTime()
+        TIMES.append(END_TIME-START_TIME)
+
+        print(i)
     print(NUMBERS)
-    heapSort(NUMBERS)
-    print(NUMBERS)
+    print(getAverage(TIMES))
