@@ -47,7 +47,7 @@ if __name__ == "__main__":
     from myFunctions import *
 
     TIMES = []
-    for i in range(30):
+    for i in range(100):
         NUMBERS = getRandomList(10000)
         START_TIME = getTime()
         quickSort(NUMBERS, 0, len(NUMBERS)-1)

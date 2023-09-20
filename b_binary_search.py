@@ -49,11 +49,9 @@ def binarySearch (LIST, VALUE):
 ### MAIN PROGRAM CODE
 
 if __name__ == "__main__":
-
-    NUMBERS = createArray(100)
-
     TIMES = []
     for i in range(30):
+        NUMBERS = createArray(10000)
         NUMBER = NUMBERS[randrange(len(NUMBERS))] # chooses one of the randomly generated numbers
         START_TIME = perf_counter()
         FOUND = binarySearch(NUMBERS, NUMBER)
