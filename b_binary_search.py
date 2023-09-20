@@ -26,29 +26,26 @@ def createArray(SIZE):
 
 def binarySearch (LIST, VALUE):
     '''
-    Search for a value within a list
+    Search for a value within a list -recursive
     :param LIST: list(int)
     :param VALUE: (int)
     :return: (bool)
     '''
 
-    start_index = 0
-    end_index = len(LIST) - 1
-
-    while start_index <= end_index:
-        midpoint_index = (start_index + end_index) // 2
-        if LIST[midpoint_index] == VALUE:
-            return True
-        elif VALUE > LIST[midpoint_index]:
-            start_index = midpoint_index + 1
+    MIDPOINT_INDEX = len(LIST)//2
+    if LIST[MIDPOINT_INDEX] == VALUE: # base case
+        return True
+    else:
+        # simplify the list and return the function
+        if VALUE < LIST[MIDPOINT_INDEX]:
+            return binarySearch(LIST[:MIDPOINT_INDEX], VALUE)
         else:
-            end_index = midpoint_index
-    return False
-
+            return binarySearch(LIST[MIDPOINT_INDEX+1:], VALUE)
 
 ### MAIN PROGRAM CODE
 
 if __name__ == "__main__":
+    from myFunctions import *
     TIMES = []
     for i in range(30):
         NUMBERS = createArray(10000)
@@ -57,8 +54,6 @@ if __name__ == "__main__":
         FOUND = binarySearch(NUMBERS, NUMBER)
         END_TIME = perf_counter()
 
-        print(f"""Number: {NUMBER}
-Found: {FOUND}
-""")
         TIMES.append(END_TIME - START_TIME)
-    print(f"Mean: {mean(TIMES)}")
+        print(i+1)
+    print(getAverage(TIMES))
