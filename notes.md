@@ -1,6 +1,5 @@
-# notes.md
 # CSE3110 - Iterative algorithms
-Iterative Algorithms are algorithms that use loops like while and for loops to process large sets of data. In contrast, Recursive Algorithms are algorithms that recall the sam algorithm over and over again to process large sets of data. Recursive algorithms often nest the same algorithm in itself, reducing teh size of the data set until the data set is the smallest possible. While Iterative algorithms tend to be faster than Recursive algorithms, algorithms that use both are even faster
+Iterative Algorithms are algorithms that use loops like while and for loops to process large sets of data. In contrast, Recursive Algorithms are algorithms that recall the same algorithm over and over again to process large sets of data. Recursive algorithms often nest the same algorithm in itself, reducing the size of the data set until the data set is the smallest possible. While Iterative algorithms tend to be faster than Recursive algorithms, algorithms that use both are even faster
 
 Iterative algorithms are easier to program than recursive algorithms.
 

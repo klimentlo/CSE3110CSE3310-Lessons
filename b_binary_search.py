@@ -34,7 +34,6 @@ def binarySearch (LIST, VALUE):
 
     start_index = 0
     end_index = len(LIST) - 1
-
     while start_index <= end_index:
         midpoint_index = (start_index + end_index) // 2
         if LIST[midpoint_index] == VALUE:
@@ -51,7 +50,7 @@ def binarySearch (LIST, VALUE):
 if __name__ == "__main__":
     TIMES = []
     for i in range(30):
-        NUMBERS = createArray(10000)
+        NUMBERS = createArray(10)
         NUMBER = NUMBERS[randrange(len(NUMBERS))] # chooses one of the randomly generated numbers
         START_TIME = perf_counter()
         FOUND = binarySearch(NUMBERS, NUMBER)
