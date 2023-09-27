@@ -1,5 +1,5 @@
 # CSE3110 - Iterative algorithms
-Iterative Algorithms are algorithms that use loops like while and for loops to process large sets of data. In contrast, Recursive Algorithms are algorithms that recall the same algorithm over and over again to process large sets of data. Recursive algorithms often nest the same algorithm in itself, reducing the size of the data set until the data set is the smallest possible. While Iterative algorithms tend to be faster than Recursive algorithms, algorithms that use both are even faster
+Iterative Algorithms are algorithms that use loops like while and for loops to process large sets of data. In contrast, Recursive Algorithms are algorithms that recall the same algorithm over and over again to process large sets of data. Recursive algorithms often nest the same algorithm in itself, reducing the size of the data set until the data set is the smallest possible. While Iterative algorithms tend to be faster than Recursive algorithms, algorithms that use both are even faster.
 
 Iterative algorithms are easier to program than recursive algorithms.
 
@@ -21,7 +21,7 @@ Linear search processing time is dependent on the length of the array and the va
 ### Measuring Time
 To measure the processing time within python, the ```time.perf_counter()``` will measure the approximate milliseconds it takes to run the program.
 
-For more accurate results, we use the average of at least 3o trials and then use ```statistics.mean()``` to find the average.
+For more accurate results, we use the average of at least 30 trials and then use ```statistics.mean()``` to find the average.
 
 ## Binary Search
 Binary search follows the __divine and conquer__ technique of finding a value. It takes an __ordered__ set of data and tests the midpoint value Then it cuts the list in half and rerun the processes until the value is found.
@@ -61,8 +61,11 @@ Advantages are that this algorithm requires little memory and is easy to program
 | 1 | *__3__* | 5 | 7 | 11 | 13 | 17 | 19 |
 | *__1__* | 3 | 5 | 7 | 11 | 13 | 17 | 19 |
 
+(checks two values and places larger value on right. Repeat that until the largest value in list is to the very right)
+
 ### Selection Sort
 Selection sort compares the current index value with the rest of the unsorted part of the array. It will find the lowest value and switch its position with the lowest index position of the unsorted half of the list. As it runs through the data set, it will select the lowest values and place them in the lower positions on the list.
+
 
 | 1 | 5 | 3 | 19 | 11 | 17 | 7 | 13 |
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -74,8 +77,10 @@ Selection sort compares the current index value with the rest of the unsorted pa
 | 1 | 3 | 5 | 7 | 11 | __13__ | 19 | _17_ |
 | 1 | 3 | 5 | 7 | 11 | 13 | __17__ | _19_ |
 
+(everytime the algorithm locates a smaller value, it saves it. When it reaches the end of the list. They swap this index's of the lowest foudn value with the first index value)
+
 ### Insertion Sort
-Insertion sort splits the list int two sections: sported and unsorted. As it progresses through the list, it takes the value at the lowest index of the unsorted list. NOTE: when a value is placed into the sorted list, it does not necessarily get placed in the correct index of the value.
+Insertion sort splits the list int two sections: sorted and unsorted. As it progresses through the list, it takes the value at the lowest index of the unsorted list. NOTE: when a value is placed into the sorted list, it does not necessarily get placed in the correct index of the value.
 
 | 1 | 5 | 3 | 19 | 11 | 17 | 7 | 13 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -88,6 +93,8 @@ Insertion sort splits the list int two sections: sported and unsorted. As it pro
 | 1 | 3 | 5 | 7 | 11 | __13__ | 17 | _19_ |
 
 NOTE: Insertion sort starts at index 1, not 0.
+
+(It takes lowest index of the unsorted spot, and places the value into the sorted list in ascending order)
 
 # CSE3310 Recursive Algorithms 1
 

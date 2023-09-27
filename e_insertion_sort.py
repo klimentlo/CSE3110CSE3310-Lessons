@@ -17,6 +17,7 @@ def insertionSort(LIST):
     for i in range(1, len(LIST)): # starts from index one, to the end of the list (we skip the first number because( its considered "sorted" for now))
         UNSORTED_VALUE = LIST[i] #The program now saves the first unsorted value in the unsorted section [value: 8] i = 1
         HIGHEST_SORTED_INDEX = i - 1 # Everything before the unsorted_value is already "sorted" [ value: 0 ]
+        print(i)
         while HIGHEST_SORTED_INDEX >= 0 and UNSORTED_VALUE < LIST[HIGHEST_SORTED_INDEX]: # when the highest sorted index is bigger than 0, and the unsorted value[8] is smaller than the largest sorted number[6]
             LIST[HIGHEST_SORTED_INDEX + 1 ] = LIST[HIGHEST_SORTED_INDEX] # replace
             HIGHEST_SORTED_INDEX = HIGHEST_SORTED_INDEX - 1 #

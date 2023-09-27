@@ -18,9 +18,9 @@ def selectionSort(LIST):
     for i in range(len(LIST)-1):
         MININUM_INDEX = i
         for j in range(i + 1, len(LIST)): # start from 1 above chosen value till the end of the list
-            if LIST[j] < LIST[MININUM_INDEX]:
-                MININUM_INDEX = j
-        if LIST[MININUM_INDEX] < LIST[i]:
+            if LIST[j] < LIST[MININUM_INDEX]: # if next index is smaller than current lowest index
+                MININUM_INDEX = j # make this new lowest index
+        if LIST[MININUM_INDEX] < LIST[i]: # if lowest value is less than
             TEMP = LIST[i]
             LIST[i] = LIST[MININUM_INDEX]
             LIST[MININUM_INDEX] = TEMP
